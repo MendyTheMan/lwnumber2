@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    background: transparent;
+}
+.navbar {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    transition: 200ms ease;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 50px;
+    height: 50px; */
+    /* background-color: black; */
+    margin: 0 30px;
+    width: 500px;
+    font-size: 1.5rem;
+}
+.logo img {
+    display: none;
+    margin: 0 2%;
+    width: 50px;
+    height: auto;
+}
+.logo h3 {
+    
+    
+}
+.nav-buttons {
+    margin: 0 30px;
+    display: flex;
+    
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    color: gray;
+}
+.instagram {
+
+}
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.image-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.image-container {
+    /* display: flex; */
+    position: relative;
+    width: 33.33333%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 200ms ease;
+    color: white;
+}
+.image-overlay h3 {
+    margin: 10% 10% 3% 10%;
+    font-size: 2.2rem;
+}
+.image-overlay p {
+    margin: 0 10%;
+    font-size: 1rem;
+}
+.image-overlay:hover {
+    opacity: 1;
+}
+.image-container img {
+    width: 100%;
+    
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+    
+}
+
+
+@media (max-width: 800px) {
+    .image-container {
+        width: 50%;
+    }
+    .hidden {
+        display: none;
+    }
+    .revealed {
+        display: block;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 500px) {
+    .image-container {
+        width: 100%;
+    }
+    .logo {
+        font-size: 0.8rem;
+        width: 50px;
+    }
+    
+}
+
+
+/* .chicken {
+    display: none;
+
+} */
+.display-nav-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.display-nav-buttons a {
+    margin: 20px;
+    transform: scale(1.8);
+    margin: 40px;
+    margin-left: 70px;
+}
+.expand {
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
